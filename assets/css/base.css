@@ -15,17 +15,17 @@ html {
     box-sizing: border-box;
 }
 
-.gird {
+.grid {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.gird__full-width {
+.grid__full-width {
     width: 100%;
 }
 
-.gird__row {
+.grid__row {
     display: flex;
     flex-wrap: wrap;
 }
