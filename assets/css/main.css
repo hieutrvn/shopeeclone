@@ -27,6 +27,12 @@
     font-weight: 300;
 }
 
+.header__navbar-item:hover,
+.header__navbar-item-link:hover{
+    color: rgba(225, 225, 225, 0.8);
+    cursor: pointer;
+}
+
 .header__navbar-item--strong {
     font-weight: 500;
 }
@@ -40,4 +46,9 @@
     right: -9px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.header__navbar-icon {
+    color: var(--white-color);
+    text-decoration: none;
 }
