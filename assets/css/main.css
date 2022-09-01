@@ -141,6 +141,28 @@
     display: none;
 }
 
+.header__notify::before {
+    content: "";
+    border-width: 20px 30px;
+    border-style:  solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 4px;
+    top: -30px;
+
+}
+
+.header__notify::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    right: 0;
+    top: -16px;
+
+}
+
 .header__notify-header {
     height: 40px;
     background-color: var(--white-color);
