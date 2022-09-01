@@ -46,6 +46,10 @@
     display: block;
 }
 
+.header__navbar-item--has-notify:hover .header__notify {
+    display: block;
+}
+
 .header__navbar-item--strong {
     font-weight: 500;
 }
@@ -121,6 +125,104 @@
 .header__qr-download {
     height: 16px;
 }
+
+/* Header Notification */
+
+.header__notify {
+    position: absolute;
+    top: 118%;
+    right: 0;
+    width: 404px;
+    background-color: var(--white-color);
+    border: 1px solid #D3D3D3;
+    cursor: default;
+    transform-origin: right top;
+    animation: headerNotifyGorwn ease-in .2s;
+    display: none;
+}
+
+.header__notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+
+}
+
+.header__notify-header h3 {
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+    user-select: none;
+
+}
+
+.header__notify-list {
+    padding-left: 0%;
+
+}
+
+.header__notify-item {
+    display: flex;
+    padding: 12px;
+
+}
+
+.header__notify-item:hover {
+    background-color: #f7f7f7;
+}
+
+
+.header__notify-item--seen {
+    background-color: rgba(238, 75, 43, .09);
+}
+
+.header__notify-link {
+    display: flex;
+    text-decoration: none;
+   
+}
+
+.header__notify-img {
+    width: 48px;
+    object-fit: contain;
+}
+
+.notify-infor {
+    margin-left: 12px;
+}
+
+.header__notify-name {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.header__notify-descriotion {
+    display: block;
+    font-size: 1.2rem;
+    color: #756f6e;
+    line-height: 1.6rem;
+}
+
+.header__notify-footer {
+   display: flex;
+}
+
+.header__notify-footer-btn {
+    color: var(--black-color);
+    text-decoration: none;
+    padding: 8px 32px;
+    margin: auto;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+
+}
+
+
 /* Animation */
 
 @keyframes fadeIn {
@@ -129,5 +231,14 @@
     }
     to{
         opacity: 1;
+    }
+}
+
+@keyframes headerNotifyGorwn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
     }
 }
