@@ -263,6 +263,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 12px;
 }
 
 .auth-form__heading {
@@ -341,6 +343,29 @@
 .btn.auth-form__facebook {
     background-color: #3a5a98;
     color: var(--white-color);
+}
+
+/* Login form */
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.auth-form__help-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.auth-form__help-space { 
+    display: block;
+    border-left: 1px solid var(--border-color);
+    margin: 0 8px;
+}
+
+.auth-form__need-help {
+    color: #939393;
 }
 /* Animation */
 
