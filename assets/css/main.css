@@ -1,5 +1,5 @@
 .header {
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0,#fd5f32,#f53f2d);
 
 }
@@ -246,6 +246,40 @@
 
 }
 
+/* Header with search */
+
+.header-with-search {
+    display: flex;
+    align-items: center;
+    height: var(--header-with-search-height);
+}
+
+.header-logo {
+     width: 200px;
+}
+
+.header-logo-img {
+    width: 150px;
+}
+
+.header__search {
+    flex: 1;
+    height: 40px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+
+.header__cart {
+     width: 150px;
+     text-align: center;
+}
+
+.header__cart-icon {
+    font-size: 2.5rem;
+    color: var(--white-color);
+    
+}
+
 /* Auth Contain */
 .auth-form {
     width: 500px;
@@ -367,3 +401,4 @@
 .auth-form__need-help {
     color: #939393;
 }
+
