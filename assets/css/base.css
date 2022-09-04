@@ -2,7 +2,8 @@
     --primary-color: #ee4d2d;
     --white-color: #fff;
     --black-color: #000;
-    --text-color: #ccc;
+    --text-color: #cccccc;
+    --border-color: #bdbdbd;
 }
 
 *{
@@ -30,6 +31,7 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
+
  /* Modal */
 
  .modal {
@@ -49,15 +51,44 @@ html {
 }
 
 .modal__body {
-    width: 300px;
-    height: 300px;
-    background-color: #ffffff;
     margin: auto;
     position: relative;
     z-index: 1;
-    border-radius: 5px;
+   
 }
 
 .modal__inner {
+
+}
+/* Btn */
+.btn {
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 12px;
+    padding: 0 26px;
 
 }
