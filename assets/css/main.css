@@ -792,7 +792,7 @@
 /* App Container */
 
 .app__container {
-    background-color: #f5f5f5;
+    background-color: var(--app-color);
 }
 
 .app__content {
