@@ -163,6 +163,7 @@
     border-radius: 2px;
     display: none;
     animation: fadeIn ease-in .3s;
+    z-index: 1;
 }
 
 .header__qr::before{
@@ -444,6 +445,8 @@
 .header__cart-list-items {
     padding-left: 0;
     list-style: none;
+    height: 55vh;
+    overflow-y: scroll;
 }
 
 .header__cart-item {
@@ -465,11 +468,17 @@
     align-items: center;
     justify-content: space-between;
     margin-right: 12px;
+    
 }
 
 .header__cart-item-name {
     font-size: 1.4rem;
     font-weight: 420;
+    padding-right: 18px;
+    display: -webkit-box;
+  	-webkit-line-clamp: 1;  /* số dòng hiển thị */
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
 }
 
 .header__cart-item-price {

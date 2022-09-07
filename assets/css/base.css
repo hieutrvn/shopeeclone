@@ -157,6 +157,7 @@ html {
     right: 0;
     background-color: var(--white-color);
     display: none;
+    z-index: 1;
 
 }
 
