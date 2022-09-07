@@ -817,13 +817,6 @@
     list-style: none;
 }
 
-.category-item  {
-}
-
-.category-item--active {
-
-}
-
 .category-item-link {
     position: relative;
     text-decoration: none;
@@ -850,3 +843,68 @@
 }
 
 /* Home filter */
+.home-filter {
+    padding: 13px 20px;
+    background-color: #ededed;
+    display: flex;
+    align-items: center;
+
+}
+.home-filter-label {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #555;
+    margin-right: 4px;
+}
+
+.home-fitler__btn {
+    margin-right: 12px;
+    min-width: 92px;
+}
+
+.btn-filer {
+    background-color: var(--white-color);
+}
+
+.home-fitler__pager {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.home-fitler__pager-num {
+    font-size: 1.4rem;
+    margin-right: 22px;
+}
+
+.home-fitler__pager-num-here {
+    color: var(--primary-color);
+}
+
+.home-fitler__pager-control {
+   display: flex;
+   border-radius: 2px;
+   overflow: hidden;
+   width: 72px;
+   height: 34px;
+}
+.home-fitler__pager-btn{
+    flex: 1;
+    display: flex;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    font-size: 1.4rem;
+    background-color: var(--white-color);
+}
+.home-fitler__pager-icon {
+    margin: auto;
+}
+
+.home-fitler__pager-btn--disable{
+    background-color: #f9f9f9;
+    cursor: default;
+}
+
+.home-fitler__pager-btn--disable .home-fitler__pager-icon-disable {
+    color: #cfcfcf;
+}

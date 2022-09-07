@@ -266,26 +266,37 @@
                     <div class="grid__column-10">
                         <div class="home-filter">
                             <span class="home-filter-label">Sắp xếp theo</span>
-                            <button class="btn btn--primary">Phổ biến</button>
-                            <button class="btn">Mới nhất</button>
-                            <button class="btn">Bán chạy</button>
+                            <button class="home-fitler__btn btn btn--primary">Phổ biến</button>
+                            <button class="home-fitler__btn btn btn-filer">Mới nhất</button>
+                            <button class="home-fitler__btn btn btn-filer">Bán chạy</button>
 
                             <div class="select-input">
                                 <span class="select-input-label">Giá</span>
                                 <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="select-input-list">
+                                    <li class="select-input-item">
+                                        <a href="#" class="select-input-link">
+                                            Giá: Thấp đến Cao
+                                        </a>
+                                    </li>
+                                    <li class="select-input-item">
+                                        <a href="#" class="select-input-link">
+                                            Giá: Cao đến Thấp
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
 
                             <div class="home-fitler__pager">
                                 <span class="home-fitler__pager-num">
-                                    <span class="home-fitler__pager-num-here">1</span>
-                                    /6
+                                    <span class="home-fitler__pager-num-here">1</span>/6
                                 </span>
                                 <div class="home-fitler__pager-control">
-                                    <a href="" class="home-fitler__pager-btn">
-                                        <i class="fa-solid fa-angle-left"></i>
+                                    <a href="" class="home-fitler__pager-btn home-fitler__pager-btn--disable">
+                                        <i class="home-fitler__pager-icon fa-solid fa-angle-left home-fitler__pager-icon-disable"></i>
                                     </a>
-                                    <a href="" class="home-fitler__pager-btn">
-                                        <i class="fa-solid fa-angle-right"></i>
+                                    <a href="" class="home-fitler__pager-btn ">
+                                        <i class="home-fitler__pager-icon  fa-solid fa-angle-right "></i>
                                     </a>
 
                                 </div>
