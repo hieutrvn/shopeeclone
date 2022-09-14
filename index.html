@@ -190,6 +190,11 @@
             </ul>
           </nav>
           <div class="header-with-search">
+            <label for="mobile-search-checkbox" class="header__mobile-search">
+              <i
+                class="header__mobile-search-icon fa-solid fa-magnifying-glass"
+              ></i>
+            </label>
             <div class="header-logo hide-on-tablet">
               <a href="#" class="hear__logo-link">
                 <svg viewBox="0 0 192 65" class="header-logo-img">
@@ -203,6 +208,14 @@
               </a>
             </div>
             <!-- Search layout -->
+
+            <input
+              type="checkbox"
+              hidden
+              id="mobile-search-checkbox"
+              class="header__search-checkbox"
+            />
+
             <div class="header__search">
               <div class="header__search-input-wrap">
                 <input

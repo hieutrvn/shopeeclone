@@ -41,4 +41,37 @@
   .hide-on-mobile {
     display: none;
   }
+  .header {
+    z-index: 2;
+  }
+  .header-with-search {
+    justify-content: space-between;
+  }
+  .header__cart,
+  .header-logo {
+    width: unset;
+  }
+
+  .header__search {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: 48px;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 1;
+    animation: mobileSearchSlide ease 0.3s;
+    display: none;
+  }
+
+  @keyframes mobileSearchSlide {
+    from {
+      opacity: 0;
+      top: calc(var(--header-height) / 2);
+    }
+    to {
+      opacity: 1;
+      top: var(--header-height);
+    }
+  }
 }
