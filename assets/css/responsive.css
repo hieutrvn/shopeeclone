@@ -7,6 +7,22 @@
   .hide-on-mobile-tablet {
     display: none;
   }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .header__sort-bar {
+    position: fixed;
+  }
+  .app__container {
+    margin-top: calc(var(--header-sort-bar-height) + var(--header-height));
+  }
+  .header__sort-bar {
+    display: flex;
+  }
 }
 
 /* Tablet */
