@@ -16,6 +16,9 @@
     align-items: center;
     z-index: 10;
   }
+  .header-with-search {
+    margin: 0 8px;
+  }
   .header__sort-bar {
     position: fixed;
   }
