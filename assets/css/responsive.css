@@ -12,6 +12,8 @@
     top: 0;
     left: 0;
     right: 0;
+    display: flex;
+    align-items: center;
     z-index: 10;
   }
   .header__sort-bar {
@@ -52,6 +54,14 @@
     width: unset;
   }
 
+  .app__content {
+    margin: 0 5px;
+  }
+
+  .header__mobile-search {
+    display: block;
+  }
+
   .header__search {
     position: fixed;
     top: var(--header-height);
@@ -62,6 +72,16 @@
     z-index: 1;
     animation: mobileSearchSlide ease 0.3s;
     display: none;
+  }
+
+  .pagination-item {
+    margin: 0;
+  }
+
+  .pagination-item--link {
+    height: 28px;
+    font-size: 1.6rem;
+    min-width: 25px;
   }
 
   @keyframes mobileSearchSlide {
